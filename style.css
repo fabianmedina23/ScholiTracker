@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+#stickyTopElement {
+  background: rgb(52,111,255);
+  background: linear-gradient(356deg, rgba(52,111,255,0.8661589635854342) 0%, rgba(0,194,255,1) 100%);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#stickyTopElement img {
+  margin-right: 20px; /* Adjust this margin to your preference */
+}
+#summaryMessage {
+  display: none;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+#editSummaryBtn {
+  background-color: #fff;
+  color: #3498db;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#editSummaryBtn:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#scholarshipEditor {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+#scholarshipEditor h3 {
+  color: #3498db;
+}
+
+#scholarshipEditor label {
+  display: block;
+  margin-top: 10px;
+}
+
+#scholarshipEditor input,
+#scholarshipEditor textarea,
+#scholarshipEditor select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#scholarshipEditor button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#scholarshipContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.scholarshipEntry {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.scholarshipEntry:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scholarshipContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.scholarshipContent p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+.scholarshipActions {
+  display: flex;
+  align-items: center;
+}
+
+.deleteBtn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.deleteBtn:hover {
+  background-color: #c0392b;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #333;
+}
+
+.menuContent {
+  display: none;
+  margin-left: auto;
+}
+
+.scholarshipActions:hover .menuContent {
+  display: block;
+}
+
+.menuContent button {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.scholarshipActions:hover .menuContent {
+  display: block;
+}
+
+.menuContent button:hover {
+  background-color: #ddd;
+}
+
+#stickyBottomElement {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  z-index: 100;
+}
+
+#stickyBottomElement button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#stickyBottomElement img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Style for the delete button */
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative; /* Ensure the positioning context */
+  display: inline-block; /* Ensure the button has its own box */
+}
+
+.deleteBtn img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0); /* Invert colors to create a red trashcan effect */
+  transition: filter 0.3s; /* Add transition for a smooth effect */
+}
+
+/* Style to make the trashcan icon red on hover */
+.deleteBtn:hover img {
+  filter: opacity(0.8); /* Remove filter on hover to display the original icon color */
+}

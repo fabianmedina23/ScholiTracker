@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="width: 325px; min-height: 600px;">
+    <div id="stickyTopElement">
+        <img src="icons/scholar_icon.png" alt="ScholiTracker" style="width: 175px; height: 75;">
+    </div>
+
+    <div id="summaryMessage" style="display: none;">
+        <p id="summaryContent"></p>
+        <button id="editSummaryBtn">Edit</button>
+    </div>
+
+    <div id="scholarshipEditor" style="display: none;">
+        <h3>Edit Scholarship</h3>
+        <label for="scholarshipName">Name</label>
+        <input type="text" id="scholarshipName" placeholder="Enter name">
+
+        <label for="scholarshipNotes">Notes:</label>
+        <textarea id="scholarshipNotes" placeholder="Enter notes"></textarea>
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate">
+
+        <label for="fundingAmount">Funding Amount:</label>
+        <input type="text" id="fundingAmount" placeholder="Enter amount">
+
+        <button id="saveScholarshipBtn">Save</button>
+        <button id="cancelScholarshipBtn">Cancel</button>
+    </div>
+
+    <div id="scholarshipContainer"></div>
+
+    <div id="stickyBottomElement">
+        <button id="helpBtn"><img src="icons/question.png" alt="Icon 1"></button>
+        <button id="addBottomBtn"><img src="icons/add.png" alt="Icon 2"></button>
+        <button id="exportBottomBtn"><img src="icons/export.png" alt="Icon 3"></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
