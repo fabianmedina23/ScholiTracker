@@ -2,7 +2,7 @@
 
 Chrome extension developed to help students keep track when applying for scholarships.
 
-<img src="demoimg-1.jpg" width="300"/> <img src="demoimg-2.jpg" width="298"/>
+<img src="demoimg-1.jpg" width="300"/> <img src="demoimg-2.jpg" width="300"/>
 
 # Features 
 
